@@ -1,3 +1,12 @@
+# Web.Comp Website 2023
+So I'm doing this comp called web.comp and this is the website that I'm building for it. I am in a group with @Tank-361 and @ . We have very minimal web development skills or experience so don't expect anything great.
+
+## Some instructions
+This is for my team members and anyone who wants to use this to build off with no experience.  
+Don't touch public or any of json or config files or anything outside of src really unless you know exactly why you are doing it and how to do it.  
+You write your html in page.tsx. Mindblowing I know.  
+This project uses an app router. It's basically a better way of switching from page to page.  
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
