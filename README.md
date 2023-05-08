@@ -9,6 +9,9 @@ This project uses an app router. It's basically a better way of switching from p
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## How it works
+This application uses an invisible index.html file which is rewritten over an over and over again based on the code written in page.tsx. Instead of creating new html pages for every different url it rewrites the html based off the url you are on. It is very cool.
+
 ## Getting Started
 
 First, run the development server:
