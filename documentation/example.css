@@ -1,0 +1,34 @@
+/* Element Selector
+   Selects all p elements and gives them this property */
+p {
+  text-align: center;
+  color: red;
+}
+
+/* ID Selector */
+/* gives this property to all elements with this ID */
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+/* Class Selector
+   gives this property to every tag with this class */
+   .center {
+    text-align: center;
+    color: red;
+  }
+
+/* Universal Selector
+   All tags get this property */
+   * {
+    text-align: center;
+    color: blue;
+  }
+
+/* Grouping Selector
+   gives this group of elements this property */
+   h1, h2, p {
+    text-align: center;
+    color: red;
+  }
