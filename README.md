@@ -1,5 +1,5 @@
 # Web.Comp Website 2023
-So I'm doing this comp called web.comp and this is the website that I'm building for it. I am in a group with @Tank-361 and @ . We have very minimal web development skills or experience so don't expect anything great.
+So I'm doing this comp called web.comp and this is the website that I'm building for it. I am in a group with [@Tank-361](https://github.com/Tank-361) and [](). We have very minimal web development skills or experience so don't expect anything great.
 
 ## Some instructions
 This is for my team members and anyone who wants to use this to build off with no experience.  
