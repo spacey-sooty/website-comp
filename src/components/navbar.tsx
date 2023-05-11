@@ -18,7 +18,7 @@ function NavBar() {
 					display: "flex",
 					background: 'black',
 					padding: '5px 0 5px 5px',
-					fontSize: '20px'
+					fontSize: '25px'
 				}}>
 					<div style={{ margin: '10px' }}>
 						<NavLink to="/" style={({ isActive }) => ({
