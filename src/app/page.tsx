@@ -1,13 +1,18 @@
+"use client";
+import React from "react";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import styles from './page.module.css'
+import about from '@/pages/about';
+import home from '@/pages/home';
+import contact from '@/pages/contact'
+import NavBar from '@/components/navbar'
+
+var _home = home;
+var _about = about;
+var _contact = contact;
 
 export default function Home() {
   return (
-    <html>   
-      <body>
-        <h1 id="font1"> CJ is good teacher </h1>
-        <p id="font2"> This is a nextjs project. Don't you think im so smort? </p>
-      </body>
-    </html>
-  
+    NavBar()
   )
 }
