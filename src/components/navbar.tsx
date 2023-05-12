@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import styles from './page.module.css'
+import styles from '@/styles/page.module.css'
 import about from '@/pages/about';
 import home from '@/pages/home';
 import contact from '@/pages/contact'
@@ -17,7 +17,8 @@ function NavBar() {
 				<div style={{
 					display: "flex",
 					background: 'black',
-					padding: '5px 0 5px 5px',
+					margin: '-10px',
+					padding: '-10px',
 					fontSize: '25px'
 				}}>
 					<div style={{ margin: '10px' }}>
