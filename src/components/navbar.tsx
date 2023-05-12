@@ -1,18 +1,20 @@
 "use client";
 import React from "react";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import styles from './page.module.css'
+import styles from '@/styles/page.module.css'
 import about from '@/pages/about';
 import home from '@/pages/home';
 import contact from '@/pages/contact'
+import image from '@/pages/image'
 
 var _home = home;
 var _about = about;
 var _contact = contact;
+var _image = image;
 
 function NavBar() {
   return (
-    <>
+    <div>
 			<BrowserRouter>
 				<div style={{
 					display: "flex",
@@ -38,14 +40,21 @@ function NavBar() {
 							Contact
 						</NavLink>
 					</div>
+					<div style={{ margin: '10px' }}>
+						<NavLink to="/image" style={({ isActive }) => ({
+							color: isActive ? 'greenyellow' : 'white' })}>
+							Image
+						</NavLink>
+					</div>
 				</div>
 				<Routes>
-					<Route exact path="/" element={<_home />} />
-					<Route exact path="/about" element={<_about />} />
-					<Route exact path="/contact" element={<_contact />} />
+					<Route path="/" element={<_home />} />
+					<Route path="/about" element={<_about />} />
+					<Route path="/contact" element={<_contact />} />
+					<Route path="/image" element={<_image />} />
 				</Routes>
 			</BrowserRouter>
-		</>
+		</div>
   )
 }
 

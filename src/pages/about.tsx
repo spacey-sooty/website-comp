@@ -1,4 +1,8 @@
 import React from "react";
+import {View, Image, StyleSheet} from 'react-native';
+// import img from './img/img.jpg'
+
+
 
 const about = () => (
   <div> 
