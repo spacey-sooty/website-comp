@@ -9,12 +9,7 @@ import {View, Image, StyleSheet} from 'react-native';
 
 
 const image = () => (
-  <Image
-      source="./download.jpeg"
-      alt="Landscape picture"
-      // width={800}
-      // height={500}
-    /> 
+  <img src="./images/download.jpeg" alt="image" />
     )
 
 export default image;
