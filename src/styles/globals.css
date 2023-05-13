@@ -25,3 +25,8 @@
   font-family: 'Trebuchet MS';
   margin: 0.8;
 }
+
+.down {
+  display:flex;
+  margin-top: 100px;
+}

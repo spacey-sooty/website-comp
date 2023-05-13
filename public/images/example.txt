@@ -1,0 +1,1 @@
+This folder is for putting images that you want displayed on the final page. you can write the path as "./images/imagename.imagetype"
