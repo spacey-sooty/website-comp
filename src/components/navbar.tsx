@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import styles from '@/styles/page.module.css'
 import about from '@/pages/about';
 import home from '@/pages/home';
 import contact from '@/pages/contact'
 import image from '@/pages/image'
+import '@/styles/page.module.css'
 
 var _home = home;
 var _about = about;
@@ -14,14 +14,15 @@ var _image = image;
 
 function NavBar() {
   return (
-    <>
+		<div> 
+			<>
 			<BrowserRouter>
 				<div style={{
 					display: "flex",
 					background: 'black',
 					margin: '-10px',
 					padding: '-10px',
-					fontSize: '25px'
+					fontSize: '25px',
 				}}>
 					<div style={{ margin: '10px' }}>
 						<NavLink to="/" style={({ isActive }) => ({
@@ -56,6 +57,8 @@ function NavBar() {
 				</Routes>
 			</BrowserRouter>
 		</>
+		</div>
+    
   )
 }
 

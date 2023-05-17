@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import img from "./images/download.jpg"
 import Image from "next/image"
+import '@/styles/globals.css'
+
 
 const image = () => (
   <div>
