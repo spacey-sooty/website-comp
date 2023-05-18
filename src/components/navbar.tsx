@@ -20,28 +20,32 @@ function NavBar() {
 					display: "flex",
 					background: 'black',
 					margin: '-10px',
-					padding: '-10px',
-					fontSize: '25px'
+					padding: '0px',
+					fontSize: '30px',
+					overflow: 'hidden',
+					position: 'fixed',
+  					top: '0',
+  					width: '100%',
 				}}>
-					<div style={{ margin: '10px' }}>
+					<div style={{ margin: '20px' }}>
 						<NavLink to="/" style={({ isActive }) => ({
 							color: isActive ? 'greenyellow' : 'white' })}>
 							Home
 						</NavLink>
 					</div>
-					<div style={{ margin: '10px' }}>
+					<div style={{ margin: '20px' }}>
 						<NavLink to="/about" style={({ isActive }) => ({
 							color: isActive ? 'greenyellow' : 'white' })}>
 							About
 						</NavLink>
 					</div>
-					<div style={{ margin: '10px' }}>
+					<div style={{ margin: '20px' }}>
 						<NavLink to="/contact" style={({ isActive }) => ({
 							color: isActive ? 'greenyellow' : 'white' })}>
 							Contact
 						</NavLink>
 					</div>
-					<div style={{ margin: '10px' }}>
+					<div style={{ margin: '20px' }}>
 						<NavLink to="/image" style={({ isActive }) => ({
 							color: isActive ? 'greenyellow' : 'white' })}>
 							Image
