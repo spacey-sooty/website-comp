@@ -25,3 +25,18 @@
   font-family: 'Trebuchet MS';
   margin: 0.8;
 }
+
+#navbar {
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.down {
+  display:flex;
+  margin-top: 100px;
+}
