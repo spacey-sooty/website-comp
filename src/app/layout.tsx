@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
-import '@/styles/page.module.css'
+import '@/styles/page.css'
+import NavBar from '@/components/Navbar2'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,10 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head >
+      <head>
         <script type="text/javascript"> window.scrollTo(0, 0); </script>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }

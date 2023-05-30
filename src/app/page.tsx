@@ -1,10 +1,12 @@
 "use client";
-import NavBar from '@/components/navbar'
-import '@/styles/page.module.css'
-
+// import NavBar from '@/components/navbar'
+import '@/styles/page.css'
 
 export default function Home() {
   return (
-    NavBar()
+    <div className='belowNavbar'>
+      <h1> Hello World! </h1>
+    </div>
+
   )
 }
