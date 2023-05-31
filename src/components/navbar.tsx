@@ -1,69 +1,75 @@
-// "use client";
-// import React from "react";
-// import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-// import about from '@/app/about';
-// import home from '@/app/home';
-// import contact from '@/app/contact'
-// import image from '@/app/image'
-// import '@/styles/page.module.css'
+"use client"
+import React from 'react'
+import Link from 'next/link'
+import '@/styles/page.css'
 
-// var _home = home;
-// var _about = about;
-// var _contact = contact;
-// var _image = image;
+export default class NavBar extends React.Component{
+  constructor(props: string) {super(props);}
 
-// function NavBar() {
-//   return (
-// 		<div> 
-// 			<>
-// 			<BrowserRouter>
-// 				<div style={{
-// 					display: "flex",
-// 					background: 'black',
-// 					margin: '-10px',
-// 					padding: '0px',
-// 					fontSize: '30px',
-// 					overflow: 'hidden',
-// 					position: 'fixed',
-//   					top: '0',
-//   					width: '100%',
-// 				}}>
-// 					<div style={{ margin: '20px' }}>
-// 						<NavLink to="/" style={({ isActive }) => ({
-// 							color: isActive ? 'greenyellow' : 'white' })}>
-// 							Home
-// 						</NavLink>
-// 					</div>
-// 					<div style={{ margin: '20px' }}>
-// 						<NavLink to="/about" style={({ isActive }) => ({
-// 							color: isActive ? 'greenyellow' : 'white' })}>
-// 							About
-// 						</NavLink>
-// 					</div>
-// 					<div style={{ margin: '20px' }}>
-// 						<NavLink to="/contact" style={({ isActive }) => ({
-// 							color: isActive ? 'greenyellow' : 'white' })}>
-// 							Contact
-// 						</NavLink>
-// 					</div>
-// 					<div style={{ margin: '20px' }}>
-// 						<NavLink to="/image" style={({ isActive }) => ({
-// 							color: isActive ? 'greenyellow' : 'white' })}>
-// 							Image
-// 						</NavLink>
-// 					</div>
-// 				</div>
-// 				<Routes>
-// 					<Route path="/" element={<_home />} />
-// 					<Route path="/about" element={<_about />} />
-// 					<Route path="/contact" element={<_contact />} />
-// 					<Route path="/image" element={<_image />} />
-// 				</Routes>
-// 			</BrowserRouter>
-// 		</>
-// 		</div>
-    
-//   )
-// }
+ Test() {
+  console.log(window.location.href)
+  return(window.location.href)
+ }
 
-// export default NavBar;
+ Location(url: string) {
+  var loc = this.Test() == url ? "yellow" : "white";
+  return loc
+  console.log(loc)
+ }
+
+ clickHandler2 = (location1: string) => {
+    return (event: React.MouseEvent) => {
+      this.Location(location1)
+    }
+  }
+
+
+ clickHandler = () => {
+  return (event: React.MouseEvent) => {
+    this.Test()
+    event.preventDefault()
+  }
+ }
+
+  render(): React.ReactNode {
+      return ( 
+        <div>
+          <>
+          <div>
+          <div className='navbar'>
+            <div id="margin20">
+              <Link href="/" className={this.Location("https:localhost:3000/")}>
+              {/* <Link href="/"> */}
+                Home
+              </Link>
+            </div>
+            <div id="margin20">
+              <Link href="/about" className={this.Location("https:localhost:3000/about")}>
+              {/* <Link href="/about"> */}
+                About
+              </Link>
+            </div>
+            <div id="margin20">
+              <Link href="/contact" className={this.Location("https:localhost:3000/contact")}>
+                Contact
+              </Link>
+            </div>
+            <div id="margin20">
+              <Link href="/image" className={this.Location("https:localhost:3000/image")}>
+                Image
+              </Link>
+            </div>
+            <div id="margin20">
+            </div>
+              <button type='button' onClick={this.clickHandler()}>
+                Location
+              </button>
+              <button type='button' onClick={this.clickHandler2("/hello")}>
+                Location?
+              </button>
+            </div>
+        </div>
+          </>
+        </div> )
+  }
+}

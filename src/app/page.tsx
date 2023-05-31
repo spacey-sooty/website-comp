@@ -1,5 +1,4 @@
 "use client";
-// import NavBar from '@/components/navbar'
 import '@/styles/page.css'
 
 export default function Home() {
