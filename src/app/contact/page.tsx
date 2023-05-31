@@ -1,12 +1,8 @@
-"use client"
-import React from "react";
-import '@/styles/globals.css'
+"use client";
+import '@/styles/page.css'
+import dynamic from 'next/dynamic';
 
-const contact = () => (
-  <div> 
-    <h1 id="font1"> CJ is a cool teacher Cool </h1>
-    <p id="font2"> Prem is too </p>
-  </div>
-)
-
-export default contact;
+var Contact;
+export default Contact = dynamic(() => import('./display'), {
+  ssr: false
+});

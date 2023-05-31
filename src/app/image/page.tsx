@@ -1,13 +1,8 @@
-"use client"
-import React from "react";
-import Image from "next/image"
-import '@/styles/globals.css'
+"use client";
+import '@/styles/page.css'
+import dynamic from 'next/dynamic';
 
-
-const image = () => (
-  <div>
-    <Image className="down" src="/images/download.jpg" alt="lol" width={285} height={177}/>
-  </div>
-)
-
-export default image;
+var imAge;
+export default imAge = dynamic(() => import('./display'), {
+  ssr: false
+});

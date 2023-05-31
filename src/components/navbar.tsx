@@ -31,7 +31,7 @@ export default class NavBar extends React.Component{
   }
  }
 
-  render(): React.ReactNode {
+  render(): React.JSX.Element {
       return ( 
         <div>
           <>
